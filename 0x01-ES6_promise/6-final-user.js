@@ -27,5 +27,6 @@ export default function handleProfileSignup(firstName, lastName) {
           );
         }
       });
+      return values;
     });
 }
