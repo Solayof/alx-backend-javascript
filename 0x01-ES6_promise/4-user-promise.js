@@ -4,11 +4,11 @@ export default function signUpUser(firstName, lastName) {
       resolve(
         {
           firstName,
-          lastName
-        }
-      )
+          lastName,
+        },
+      );
     } else {
-      reject(new Error("Empty user details"));
+      reject(new Error('Empty user details'));
     }
   });
 }
