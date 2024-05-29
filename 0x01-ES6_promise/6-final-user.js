@@ -13,16 +13,13 @@ export default function handleProfileSignup(firstName, lastName) {
       results.forEach((result) => {
         if (result.status === 'fulfilled') {
           values.push(
-            {
-              status: result.status,
-              value: result.value,
-            },
+              result
           );
         } else {
           values.push(
             {
               status: result.status,
-              value: `${result.reason}`,
+              value: `${result.reason.message}`,
             },
           );
         }
