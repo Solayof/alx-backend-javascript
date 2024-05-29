@@ -19,7 +19,7 @@ export default function handleProfileSignup(firstName, lastName) {
           values.push(
             {
               status: result.status,
-              value: `${result.reason.message}`,
+              value: `${result.reason}`,
             },
           );
         }
