@@ -3,7 +3,7 @@ export default function getResponseFromAPI() {
     try {
       resolve('instance of promise return');
     } catch (err) {
-      reject(Error('instance rejected'));
+      reject(new Error('instance rejected'));
     }
   });
 }
