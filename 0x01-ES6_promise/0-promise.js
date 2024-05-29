@@ -1,5 +1,9 @@
 export default function getResponseFromAPI() {
   return new Promise((resolve, reject) => {
-    resolve("instance of promise return");
+    try {
+      resolve('instance of promise return');
+    } catch (err) {
+      reject(Error('instance rejected'));
+    }
   });
 }
