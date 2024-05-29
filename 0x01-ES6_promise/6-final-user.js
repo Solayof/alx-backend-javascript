@@ -13,7 +13,7 @@ export default function handleProfileSignup(firstName, lastName) {
       results.forEach((result) => {
         if (result.status === 'fulfilled') {
           values.push(
-              result
+            result,
           );
         } else {
           values.push(
