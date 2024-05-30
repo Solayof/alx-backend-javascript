@@ -14,4 +14,11 @@ export default class Building {
   get sqrt() {
     return this._sqrt;
   }
+
+  set sqrt(sqrt) {
+    if (typeof sqrt !== 'number') {
+      throw new TypeError('sqrt must be a number');
+    }
+    this._sqrt = sqrt;
+  }
 }
