@@ -7,5 +7,4 @@ const port = 1245;
 app.listen(port);
 app.use(indexRouter);
 
- 
-module.exports = app;
+export default app;
